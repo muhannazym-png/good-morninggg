@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171831">
+  <title>Good morning, sleepyhead ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="starField" class="star-field" aria-hidden="true"></div>
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <header class="top-label">
+    <span class="tiny-heart">♡</span>
+    a little piece of my heart, just for you
+    <span class="tiny-heart">♡</span>
+  </header>
+
+  <main>
+    <!-- 1. NIGHT SCREEN -->
+    <section id="nightScreen" class="screen night-screen active">
+      <div class="moon-wrap">
+        <div class="moon">☾</div>
+        <span class="moon-star star-a">✦</span>
+        <span class="moon-star star-b">✧</span>
+        <span class="moon-star star-c">·</span>
+      </div>
+
+      <p class="eyebrow">a little morning surprise</p>
+      <h1 class="hero-title">how did you sleep honeyyy?</h1>
+      <p class="soft-copy">I hope you had the sweetest dreams ♡</p>
+
+      <button id="wakeButton" class="magic-button">
+        good morning my sun, my godd☀️
+        <span class="button-sparkle">✧</span>
+      </button>
+
+      <p class="tiny-note">psst... someone is thinking about you</p>
+    </section>
+
+    <!-- 2. SUNRISE SCREEN -->
+    <section id="morningScreen" class="screen morning-screen">
+      <div class="sunrise-art" aria-hidden="true">
+        <div class="sun-halo"></div>
+        <div class="sun-disc"></div>
+        <div class="cloud cloud-left"></div>
+        <div class="cloud cloud-right"></div>
+      </div>
+
+      <p class="eyebrow">a brand new day</p>
+      <h1 class="section-title">Good morning, my sunshine ☀️</h1>
+      <p id="typedGreeting" class="typed-message"></p>
+
+      <button id="toSubjectButton" class="magic-button hidden">
+        let's see what your day looks like ♡
+      </button>
+    </section>
+
+    <!-- 3. SUBJECT GAME -->
+    <section id="subjectScreen" class="screen content-screen">
+      <p class="eyebrow">let me guess...</p>
+      <h1 class="section-title">what subject will you study today?</h1>
+      <p class="soft-copy">Let's see if my intuition is working today 😭♡</p>
+
+      <div class="subject-grid">
+        <button class="subject-card" data-subject="physics">
+          <span class="subject-icon">⚛️</span>
+          <span>Physics</span>
+          <span class="card-caption">the complicated one</span>
+        </button>
+
+        <button class="subject-card" data-subject="chemistry">
+          <span class="subject-icon">🧪</span>
+          <span>Chemistry</span>
+          <span class="card-caption">my prediction...</span>
+        </button>
+
+        <button class="subject-card" data-subject="math">
+          <span class="subject-icon">📐</span>
+          <span>Math</span>
+          <span class="card-caption">please no 😭</span>
+        </button>
+      </div>
+
+      <article id="subjectResult" class="result-card hidden">
+        <img id="subjectPhoto" class="subject-photo hidden" src="" alt="">
+        <div id="resultEmoji" class="result-emoji">♡</div>
+        <h2 id="resultTitle"></h2>
+        <p id="resultMessage"></p>
+      </article>
+
+      <button id="toDiaryButton" class="magic-button hidden">
+        our little sleep diary 🌙
+      </button>
+    </section>
+
+    <!-- 4. SLEEP DIARY -->
+    <section id="diaryScreen" class="screen content-screen">
+      <p class="eyebrow">little memories, sleepy hearts</p>
+      <h1 class="section-title">Our little sleep diary 🌙</h1>
+      <p class="section-intro">
+        We said "just five more minutes"...
+        and somehow it became 5 AM.
+      </p>
+
+      <div class="timeline">
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 5</div>
+          <div class="memory-time">3 AM</div>
+          <p>“Just five more minutes…”</p>
+          <span class="memory-decoration">☾</span>
+        </article>
+
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 6</div>
+          <div class="memory-time">5 AM</div>
+          <p>“How did we end up here again?”</p>
+          <span class="memory-decoration">✧</span>
+        </article>
+
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 7</div>
+          <div class="memory-time">5 AM</div>
+          <p>“We really forgot that sleep exists.”</p>
+          <span class="memory-decoration">☀️</span>
+        </article>
+
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 8</div>
+          <div class="memory-time">1 AM</div>
+          <p>“An early night… kind of.”</p>
+          <span class="memory-decoration">♡</span>
+        </article>
+
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 9</div>
+          <div class="memory-time">4 AM</div>
+          <p>“One last message turned into hours.”</p>
+          <span class="memory-decoration">💌</span>
+        </article>
+
+        <article class="memory-card">
+          <div class="memory-date">OCTOBER 10</div>
+          <div class="memory-time">3 AM for me · 4 AM for him</div>
+          <p>“Different time zones, same problem.”</p>
+          <span class="memory-decoration">🌙</span>
+        </article>
+      </div>
+
+      <div class="gentle-note">
+        <span class="note-icon">💗</span>
+        <p>
+          I love our late-night conversations.
+          But I also want us to sleep well, wake up happy,
+          and have enough energy for all our dreams.
+        </p>
+        <p>There will always be another tomorrow to talk. ♡</p>
+      </div>
+
+      <button id="toKitButton" class="magic-button">
+        open your morning survival kit 🎁
+      </button>
+    </section>
+
+    <!-- 5. MORNING SURVIVAL KIT -->
+    <section id="kitScreen" class="screen content-screen">
+      <p class="eyebrow">four little gifts from me</p>
+      <h1 class="section-title">Your morning survival kit 🎁</h1>
+      <p class="section-intro">
+        Open each little card. I put a piece of my heart inside.
+      </p>
+
+      <div class="kit-grid">
+        <button class="gift-card" data-gift="sunshine">
+          <span class="gift-icon">☀️</span>
+          <span class="gift-name">A little sunshine</span>
+          <span class="gift-hint">tap to open ♡</span>
+          <span class="gift-content"></span>
+        </button>
+
+        <button class="gift-card" data-gift="brain">
+          <span class="gift-icon">🧠</span>
+          <span class="gift-name">Brain fuel</span>
+          <span class="gift-hint">tap to open ♡</span>
+          <span class="gift-content"></span>
+        </button>
+
+        <button class="gift-card" data-gift="message">
+          <span class="gift-icon">💌</span>
+          <span class="gift-name">A message from me</span>
+          <span class="gift-hint">tap to open ♡</span>
+          <span class="gift-content"></span>
+        </button>
+
+        <button class="gift-card" data-gift="reminder">
+          <span class="gift-icon">💤</span>
+          <span class="gift-name">A tiny reminder</span>
+          <span class="gift-hint">tap to open ♡</span>
+          <span class="gift-content"></span>
+        </button>
+      </div>
+
+      <button id="toPlantButton" class="magic-button">
+        one last little surprise 🌱
+      </button>
+    </section>
+
+    <!-- 6. GROW A LITTLE PLANT -->
+    <section id="plantScreen" class="screen content-screen plant-screen">
+      <p class="eyebrow">something small, just for you</p>
+      <h1 class="section-title">A little plant for your new day 🌱</h1>
+      <p class="section-intro">
+        Let's grow a little happiness together.
+      </p>
+
+      <div class="plant-scene">
+        <div class="plant-sparkles" aria-hidden="true">✦ · ✧ · ✦</div>
+
+        <div id="plant" class="plant stage-0">
+          <div class="flower-head">
+            <span class="petal petal-1"></span>
+            <span class="petal petal-2"></span>
+            <span class="petal petal-3"></span>
+            <span class="petal petal-4"></span>
+            <span class="petal petal-5"></span>
+            <span class="flower-center">♥</span>
+          </div>
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+        </div>
+
+        <div class="soil"></div>
+        <div id="seed" class="seed">●</div>
+        <div class="pot">
+          <div class="pot-rim"></div>
+          <div class="pot-body"></div>
+        </div>
+      </div>
+
+      <p id="plantCounter" class="plant-counter">Your little seed is waiting ♡</p>
+
+      <button id="plantButton" class="magic-button">
+        PLANT A LITTLE HAPPINESS 🌱
+      </button>
+
+      <div id="plantWish" class="plant-wish hidden" aria-live="polite">
+        <span id="wishNumber" class="wish-number"></span>
+        <p id="wishText"></p>
+      </div>
+
+      <div id="flowerEnding" class="flower-ending hidden">
+        <h2>Look what we grew together! 🌸</h2>
+        <p>I hope your day grows as beautifully as this little flower.</p>
+        <p class="final-love">I love you and miss you already. ♡</p>
+      </div>
+
+      <button id="restartButton" class="text-button hidden">
+        relive this little morning ♡
+      </button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>made with love, just for you</span>
+    <span class="footer-heart">♡</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
